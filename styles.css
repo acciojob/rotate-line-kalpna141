@@ -1,1 +1,16 @@
 /*  your css code here. If applicable */
+#line{
+	color:black;
+	width:200px;
+	height:2px;
+	position:relative;
+	animation:rotate 3s linear infinite;
+	@keyframes rotate{
+		0%{
+		transform:rotate(0deg);	
+		}
+		100%{
+			transform:rotate(360deg);
+		}
+	}
+}
