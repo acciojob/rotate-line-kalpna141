@@ -13,6 +13,7 @@
  width:200px;
  height:2px;
  background-color:black;
+	position:absolute;
 animation: rotate 5s linear infinite;
 	
 }
