@@ -1,18 +1,18 @@
-//your JS code here. If required.
-const express = require('express');
-const path = require('path');
+function rotate(){
 
-const app = express();
+    let timing = document.getElementById("line");
+    let degree = 0;
 
-app.use(express.static(__dirname))
+    function rotateAtInterval(){
+        degree = degree + 5;
+        timing.style.transform = `rotate(${degree}deg)`;
+        timing.style.transitionTimingFunction = 'linear';
+        timing.style.transitionDuration = '0.4s'; 
+        
+    }
 
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname + '/main.html'));
-});
-//your code here
-app.post('/add', (req, res) => {
-  const {a,b} = req.body;
-  res.status(200).send(a+b);
-  // res.sendFile(path.join(__dirname + '/main.html'));
-});
-module.exports = app;
+    setInterval(rotateAtInterval,100)
+
+}
+
+rotate();
