@@ -1,26 +1,17 @@
-/*  your css code here. If applicable */
-.container{
-  background-color:blue;
-	width:300px;
-	height:300px;
-	display:flex;
-	align-items:center;
-    justify-content:center;
-	
-	
-}
+
 #line{
  width:200px;
  height:2px;
  background-color:black;
 	position:absolute;
-animation: rotate 5s linear infinite;
-	
+	top:50%;
+	left:50%;
+transform: translate(-50%, -50%);
 }
-@keyframe rotate {
+/* @keyframe rotate {
 	
 	to{
 	transform:rotate(360deg);
 	}
-	
+	 */
   }
